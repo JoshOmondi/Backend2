@@ -1,0 +1,7 @@
+-- CREATE PROCEDURE GetAllProducts()
+-- BEGIN
+--     SELECT p.id, p.name, p.price, p.description, p.quantity, p.category, 
+--            f.name AS farmer_name, f.email AS farmer_email
+--     FROM products p
+--     JOIN farmers f ON p.farmer_id = f.id;
+-- END

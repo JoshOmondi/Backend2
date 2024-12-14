@@ -1,0 +1,9 @@
+-- CREATE PROCEDURE AddFarmer(
+--     IN farmer_name VARCHAR(255),
+--     IN farmer_email VARCHAR(255),
+--     IN farmer_location VARCHAR(255)
+-- )
+-- BEGIN
+--     INSERT INTO farmers (name, email, location) 
+--     VALUES (farmer_name, farmer_email, farmer_location);
+-- END 

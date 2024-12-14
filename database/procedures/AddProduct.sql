@@ -1,0 +1,12 @@
+-- CREATE PROCEDURE AddProduct(
+--     IN product_name VARCHAR(255),
+--     IN product_price DECIMAL(10, 2),
+--     IN product_description TEXT,
+--     IN product_quantity INT,
+--     IN product_category VARCHAR(255),
+--     IN farmer_id INT
+-- )
+-- BEGIN
+--     INSERT INTO products (name, price, description, quantity, category, farmer_id) 
+--     VALUES (product_name, product_price, product_description, product_quantity, product_category, farmer_id);
+-- END
