@@ -1,24 +1,10 @@
-// src/routes/productRoutes.ts
-import express from "express";
-import {
-  getAllProducts,
-  createProduct,
-} from "../controllers/productControllers";
+import { Router } from "express";
 
-const router = express.Router();
+const router = Router();
 
-router.get("/", getAllProducts);
-router.post("/", createProduct);
-
-export default router;
-
-// src/routes/farmerRoutes.ts
-import express from "express";
-import { getAllFarmers, createFarmer } from "../controllers/farmerControllers";
-
-const router = express.Router();
-
-router.get("/", getAllFarmers);
-router.post("/", createFarmer);
+// Define your routes here
+router.get("/products", (req, res) => {
+  res.send("List of products");
+});
 
 export default router;
