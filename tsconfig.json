@@ -1,32 +1,13 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
-    "useDefineForClassFields": false,
-    "lib": ["ES2022", "dom"]
+    "outDir": "./build", // Where compiled files go
+    "rootDir": "./src", // Where TypeScript source files are
+    "target": "es2020", // ECMAScript target version
+    "module": "commonjs", // Module system
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true, // Interoperability with CommonJS
+    "skipLibCheck": true // Skip type checking of declaration files
   },
-  "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  },
-  "include": ["src/**/*"],
-  "exclude": ["cypress.config.ts"]
+  "include": ["src/**/*"], // Include all TypeScript files in src
+  "exclude": ["node_modules", "build", "cypress.config.ts"] // Exclude irrelevant files
 }
